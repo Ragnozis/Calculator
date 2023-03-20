@@ -53,9 +53,7 @@
             // 
             // Screen
             // 
-            this.Screen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Screen.Enabled = false;
             this.Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Screen.Location = new System.Drawing.Point(12, 44);
             this.Screen.Multiline = true;
@@ -86,9 +84,6 @@
             // 
             // Sign
             // 
-            this.Sign.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Sign.Location = new System.Drawing.Point(235, 152);
             this.Sign.Name = "Sign";
             this.Sign.Size = new System.Drawing.Size(74, 36);
@@ -99,9 +94,6 @@
             // 
             // Plus
             // 
-            this.Plus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Plus.Location = new System.Drawing.Point(340, 152);
             this.Plus.Name = "Plus";
             this.Plus.Size = new System.Drawing.Size(74, 36);
@@ -112,9 +104,6 @@
             // 
             // Seven
             // 
-            this.Seven.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Seven.Location = new System.Drawing.Point(26, 240);
             this.Seven.Name = "Seven";
             this.Seven.Size = new System.Drawing.Size(74, 36);
@@ -125,9 +114,6 @@
             // 
             // Eight
             // 
-            this.Eight.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Eight.Location = new System.Drawing.Point(132, 240);
             this.Eight.Name = "Eight";
             this.Eight.Size = new System.Drawing.Size(74, 36);
@@ -138,9 +124,6 @@
             // 
             // Nine
             // 
-            this.Nine.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Nine.Location = new System.Drawing.Point(235, 240);
             this.Nine.Name = "Nine";
             this.Nine.Size = new System.Drawing.Size(74, 36);
@@ -151,9 +134,6 @@
             // 
             // Minus
             // 
-            this.Minus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Minus.Location = new System.Drawing.Point(340, 240);
             this.Minus.Name = "Minus";
             this.Minus.Size = new System.Drawing.Size(74, 36);
@@ -164,9 +144,6 @@
             // 
             // Four
             // 
-            this.Four.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Four.Location = new System.Drawing.Point(26, 331);
             this.Four.Name = "Four";
             this.Four.Size = new System.Drawing.Size(74, 36);
@@ -177,9 +154,6 @@
             // 
             // Five
             // 
-            this.Five.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Five.Location = new System.Drawing.Point(132, 331);
             this.Five.Name = "Five";
             this.Five.Size = new System.Drawing.Size(74, 36);
@@ -190,9 +164,6 @@
             // 
             // Six
             // 
-            this.Six.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Six.Location = new System.Drawing.Point(235, 331);
             this.Six.Name = "Six";
             this.Six.Size = new System.Drawing.Size(74, 36);
@@ -203,9 +174,6 @@
             // 
             // Multiplication
             // 
-            this.Multiplication.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Multiplication.Location = new System.Drawing.Point(340, 331);
             this.Multiplication.Name = "Multiplication";
             this.Multiplication.Size = new System.Drawing.Size(74, 36);
@@ -216,9 +184,6 @@
             // 
             // One
             // 
-            this.One.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.One.Location = new System.Drawing.Point(26, 415);
             this.One.Name = "One";
             this.One.Size = new System.Drawing.Size(74, 36);
@@ -239,9 +204,6 @@
             // 
             // Three
             // 
-            this.Three.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Three.Location = new System.Drawing.Point(235, 415);
             this.Three.Name = "Three";
             this.Three.Size = new System.Drawing.Size(74, 36);
@@ -252,9 +214,6 @@
             // 
             // Division
             // 
-            this.Division.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Division.Location = new System.Drawing.Point(340, 415);
             this.Division.Name = "Division";
             this.Division.Size = new System.Drawing.Size(74, 36);
@@ -265,9 +224,6 @@
             // 
             // Zero
             // 
-            this.Zero.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Zero.Location = new System.Drawing.Point(26, 503);
             this.Zero.Name = "Zero";
             this.Zero.Size = new System.Drawing.Size(74, 36);
@@ -278,9 +234,6 @@
             // 
             // Dot
             // 
-            this.Dot.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Dot.Location = new System.Drawing.Point(132, 503);
             this.Dot.Name = "Dot";
             this.Dot.Size = new System.Drawing.Size(74, 36);
@@ -291,9 +244,6 @@
             // 
             // Еquals
             // 
-            this.Еquals.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Еquals.Location = new System.Drawing.Point(235, 503);
             this.Еquals.Name = "Еquals";
             this.Еquals.Size = new System.Drawing.Size(179, 36);
@@ -307,7 +257,7 @@
             this.Label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label.BackColor = System.Drawing.SystemColors.Window;
+            this.Label.BackColor = System.Drawing.SystemColors.Control;
             this.Label.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Label.Location = new System.Drawing.Point(13, 51);
             this.Label.Name = "Label";
@@ -340,6 +290,7 @@
             this.Controls.Add(this.Clear);
             this.Controls.Add(this.Label);
             this.Controls.Add(this.Screen);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
