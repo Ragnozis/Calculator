@@ -5,214 +5,171 @@ namespace WinFormsApp1
         double number1, number2;
         int operation, repeat = 0;
         bool end = false;
+        bool dot = true;
+        bool size = true;
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void Zero_Click(object sender, EventArgs e)   // c# regex, сайт regex101
         {
-            if (double.TryParse(Screen.Text, out number1) == true)
+            if (size == true)
             {
                 if (end == true)
                 {
                     Screen.Text = "";
                     end = false;
                 }
-                Screen.Text = Zero.Text;
-
+                Screen.Text = Screen.Text + Zero.Text;
             }
+
+            
+
         }
 
-        private void One_Click(object sender, EventArgs e)
-        {
-            if (end == true)
-            {
-                Screen.Text = "";
-                end = false;
-            }
-            Screen.Text = One.Text;
-        }
+       
 
-        private void Two_Click(object sender, EventArgs e)
+        private void Number_Click(object sender, EventArgs e)
         {
-            if (end == true)
+            if (size == true)
             {
-                Screen.Text = "";
-                end = false;
+                if (end == true)
+                {
+                    Screen.Text = "";
+                    end = false;
+                }
+                var tmp = sender as Button;
+                Screen.Text = Screen.Text + tmp.Text;
             }
-            Screen.Text = Two.Text;
-        }
-
-        private void Three_Click(object sender, EventArgs e)
-        {
-            if (end == true)
-            {
-                Screen.Text = "";
-                end = false;
-            }
-            Screen.Text = Three.Text;
-        }
-
-        private void Four_Click(object sender, EventArgs e)
-        {
-            if (end == true)
-            {
-                Screen.Text = "";
-                end = false;
-            }
-            Screen.Text = Four.Text;
-        }
-
-        private void Five_Click(object sender, EventArgs e)
-        {
-            if (end == true)
-            {
-                Screen.Text = "";
-                end = false;
-            }
-            Screen.Text = Five.Text;
-        }
-
-        private void Six_Click(object sender, EventArgs e)
-        {
-            if (end == true)
-            {
-                Screen.Text = "";
-                end = false;
-            }
-            Screen.Text = Six.Text;
-        }
-
-        private void Seven_Click(object sender, EventArgs e)
-        {
-            if (end == true)
-            {
-                Screen.Text = "";
-                end = false;
-            }
-            Screen.Text = Seven.Text;
-        }
-
-        private void Eight_Click(object sender, EventArgs e)
-        {
-            if (end == true)
-            {
-                Screen.Text = "";
-                end = false;
-            }
-            Screen.Text = Eight.Text;
-        }
-
-        private void Nine_Click(object sender, EventArgs e)
-        {
-            if (end == true)
-            {
-                Screen.Text = "";
-                end = false;
-            }
-            Screen.Text = Nine.Text;
         }
         private void Dot_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(Screen.Text, out number1) == true)
+            if (size == true)
             {
-                if (end == true)
+                if ((double.TryParse(Screen.Text, out number1) == true) && dot == true)
                 {
-                    Screen.Text = "";
-                    end = false;
-                }
-                Screen.Text = Dot.Text;
+                    if (end == true)
+                    {
+                        Screen.Text = "";
+                        end = false;
+                    }
+                    Screen.Text = Screen.Text + Dot.Text;
+                    dot = false;
 
+                }
             }
             
         }
         private void Plus_Click(object sender, EventArgs e)
-        {
-            if (repeat != 0)
+        { if (Screen.Text != "")
             {
-                calculate();
-                number1 = double.Parse(Screen.Text);
-                Screen.Clear();
-                operation = 1;
-                repeat = repeat + 1;
-                Label.Text = number1.ToString();
+                if (repeat != 0)
+                {
+                    calculate();
+                    number1 = double.Parse(Screen.Text);
+                    Screen.Clear();
+                    operation = 1;
+                    repeat = repeat + 1;
+                    Label.Text = number1.ToString();
 
-               
-            }
-            else
-            {
-                number1 = double.Parse(Screen.Text);
-                Screen.Clear();
-                operation = 1;
-                Label.Text = number1.ToString();
-                repeat = repeat + 1;
+
+                }
+                else
+                {
+                    number1 = double.Parse(Screen.Text);
+                    Screen.Clear();
+                    operation = 1;
+                    Label.Text = number1.ToString();
+                    repeat = repeat + 1;
+                }
+                dot = true;
+                size = true;
             }
         }
 
         private void Minus_Click(object sender, EventArgs e)
         {
-            if (repeat != 0)
+            if (Screen.Text != "")
             {
-                calculate();
-                number1 = double.Parse(Screen.Text);
-                Screen.Clear();
-                operation = 2;
-                repeat = repeat + 1;
-                Label.Text = number1.ToString();
+                if (repeat != 0)
+                {
+                    calculate();
+                    number1 = double.Parse(Screen.Text);
+                    Screen.Clear();
+                    operation = 2;
+                    repeat = repeat + 1;
+                    Label.Text = number1.ToString();
 
-                
-            }
-            else
-            {
-                number1 = double.Parse(Screen.Text);
-                Screen.Clear();
-                operation = 2;
-                Label.Text = number1.ToString();
-                repeat = repeat + 1;
+
+                }
+                else
+                {
+                    number1 = double.Parse(Screen.Text);
+                    Screen.Clear();
+                    operation = 2;
+                    Label.Text = number1.ToString();
+                    repeat = repeat + 1;
+                }
+                dot = true;
+                size = true;
+
             }
         }
 
         private void Multiplication_Click(object sender, EventArgs e)
         {
-            if (repeat != 0)
+            if (Screen.Text != "")
             {
-                calculate();
-                number1 = double.Parse(Screen.Text);
-                Screen.Clear();
-                operation = 3;
-                repeat = repeat + 1;
-                Label.Text = number1.ToString();
+                if (repeat != 0)
+                {
+                    calculate();
+                    number1 = double.Parse(Screen.Text);
+                    Screen.Clear();
+                    operation = 3;
+                    repeat = repeat + 1;
+                    Label.Text = number1.ToString();
 
-            }
-            else
-            {
-                number1 = double.Parse(Screen.Text);
-                Screen.Clear();
-                operation = 3;
-                Label.Text = number1.ToString();
-                repeat = repeat + 1;
+                }
+                else
+                {
+                    number1 = double.Parse(Screen.Text);
+                    Screen.Clear();
+                    operation = 3;
+                    Label.Text = number1.ToString();
+                    repeat = repeat + 1;
+                }
+                dot = true;
+                size = true;
+
             }
         }
 
         private void Division_Click(object sender, EventArgs e)
         {
-            if (repeat != 0)
+            if (Screen.Text != "")
             {
-                calculate();
-                number1 = double.Parse(Screen.Text);
-                Screen.Clear();
-                operation = 4;
-                repeat = repeat + 1;
-                Label.Text = number1.ToString();
-            }
-            else
-            {
-                number1 = double.Parse(Screen.Text);
-                Screen.Clear();
-                operation = 4;
-                Label.Text = number1.ToString();
-                repeat = repeat + 1;
+                if (repeat != 0)
+                {
+                    calculate();
+                    number1 = double.Parse(Screen.Text);
+                    Screen.Clear();
+                    operation = 4;
+                    repeat = repeat + 1;
+                    Label.Text = number1.ToString();
+                }
+                else
+                {
+                    number1 = double.Parse(Screen.Text);
+                    Screen.Clear();
+                    operation = 4;
+                    Label.Text = number1.ToString();
+                    repeat = repeat + 1;
+                }
+                dot = true;
+                size = true;
+
             }
         }
 
@@ -257,6 +214,7 @@ namespace WinFormsApp1
                 Label.Text = "";
                 end = true;
                 repeat = 0;
+
             }
             else
             {
@@ -265,6 +223,9 @@ namespace WinFormsApp1
                 end = true;
                 repeat = 0;
             }
+            dot = true;
+            size = true;
+
         }
 
         private void Clear_Click(object sender, EventArgs e)
@@ -272,6 +233,15 @@ namespace WinFormsApp1
             Screen.Text = "";
             Label.Text = "";
             repeat = 0;
+            dot = true;
+        }
+
+        private void Screen_TextChanged(object sender, EventArgs e)
+        {
+            if (Screen.Text != "" && double.Parse(Screen.Text) > 9999999999999)
+            {
+                size = false;
+            }
         }
 
         private void Backspace_Click(object sender, EventArgs e)

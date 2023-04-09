@@ -56,11 +56,13 @@
             this.Screen.Enabled = false;
             this.Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Screen.Location = new System.Drawing.Point(12, 44);
+            this.Screen.MaxLength = 14;
             this.Screen.Multiline = true;
             this.Screen.Name = "Screen";
             this.Screen.Size = new System.Drawing.Size(402, 43);
             this.Screen.TabIndex = 0;
             this.Screen.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Screen.TextChanged += new System.EventHandler(this.Screen_TextChanged);
             // 
             // Clear
             // 
@@ -110,7 +112,7 @@
             this.Seven.TabIndex = 5;
             this.Seven.Text = "7";
             this.Seven.UseVisualStyleBackColor = true;
-            this.Seven.Click += new System.EventHandler(this.Seven_Click);
+            this.Seven.Click += new System.EventHandler(this.Number_Click);
             // 
             // Eight
             // 
@@ -120,7 +122,7 @@
             this.Eight.TabIndex = 6;
             this.Eight.Text = "8";
             this.Eight.UseVisualStyleBackColor = true;
-            this.Eight.Click += new System.EventHandler(this.Eight_Click);
+            this.Eight.Click += new System.EventHandler(this.Number_Click);
             // 
             // Nine
             // 
@@ -130,7 +132,7 @@
             this.Nine.TabIndex = 7;
             this.Nine.Text = "9";
             this.Nine.UseVisualStyleBackColor = true;
-            this.Nine.Click += new System.EventHandler(this.Nine_Click);
+            this.Nine.Click += new System.EventHandler(this.Number_Click);
             // 
             // Minus
             // 
@@ -150,7 +152,7 @@
             this.Four.TabIndex = 9;
             this.Four.Text = "4";
             this.Four.UseVisualStyleBackColor = true;
-            this.Four.Click += new System.EventHandler(this.Four_Click);
+            this.Four.Click += new System.EventHandler(this.Number_Click);
             // 
             // Five
             // 
@@ -160,7 +162,7 @@
             this.Five.TabIndex = 10;
             this.Five.Text = "5";
             this.Five.UseVisualStyleBackColor = true;
-            this.Five.Click += new System.EventHandler(this.Five_Click);
+            this.Five.Click += new System.EventHandler(this.Number_Click);
             // 
             // Six
             // 
@@ -170,7 +172,7 @@
             this.Six.TabIndex = 11;
             this.Six.Text = "6";
             this.Six.UseVisualStyleBackColor = true;
-            this.Six.Click += new System.EventHandler(this.Six_Click);
+            this.Six.Click += new System.EventHandler(this.Number_Click);
             // 
             // Multiplication
             // 
@@ -190,7 +192,7 @@
             this.One.TabIndex = 13;
             this.One.Text = "1";
             this.One.UseVisualStyleBackColor = true;
-            this.One.Click += new System.EventHandler(this.One_Click);
+            this.One.Click += new System.EventHandler(this.Number_Click);
             // 
             // Two
             // 
@@ -200,7 +202,7 @@
             this.Two.TabIndex = 14;
             this.Two.Text = "2";
             this.Two.UseVisualStyleBackColor = true;
-            this.Two.Click += new System.EventHandler(this.Two_Click);
+            this.Two.Click += new System.EventHandler(this.Number_Click);
             // 
             // Three
             // 
@@ -210,7 +212,7 @@
             this.Three.TabIndex = 15;
             this.Three.Text = "3";
             this.Three.UseVisualStyleBackColor = true;
-            this.Three.Click += new System.EventHandler(this.Three_Click);
+            this.Three.Click += new System.EventHandler(this.Number_Click);
             // 
             // Division
             // 
@@ -238,7 +240,7 @@
             this.Dot.Name = "Dot";
             this.Dot.Size = new System.Drawing.Size(74, 36);
             this.Dot.TabIndex = 18;
-            this.Dot.Text = ".";
+            this.Dot.Text = ",";
             this.Dot.UseVisualStyleBackColor = true;
             this.Dot.Click += new System.EventHandler(this.Dot_Click);
             // 
@@ -261,7 +263,7 @@
             this.Label.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Label.Location = new System.Drawing.Point(13, 51);
             this.Label.Name = "Label";
-            this.Label.Size = new System.Drawing.Size(87, 30);
+            this.Label.Size = new System.Drawing.Size(172, 30);
             this.Label.TabIndex = 20;
             // 
             // Form1
